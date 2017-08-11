@@ -1,0 +1,10 @@
+{{#link-to 'question' question.id}}
+<h2>{{model.content}}</h2>
+<br>
+<h2>{{model.author}}</h2>
+<br>
+<h2>{{model.note}}</h2>
+
+{{update-question question=model update="update"}}
+
+{{question-detail question=model destroyQuestion="destoryQuestion"}}
