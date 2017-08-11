@@ -5,10 +5,17 @@
 <p>Have any general questions about programming!</p>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
-
 </ul>
+
+<!-- <ul>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.content}} - {{answer.author}}</li>
+  {{/each}}
+</ul>
+
+{{new-answer saveAnswer="saveAnswer"}} -->
 
 {{new-question saveQuestion2="saveQuestion3"}}

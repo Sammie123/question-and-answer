@@ -2,6 +2,9 @@
 <h4>Submitted by: {{model.author}}</h4>
 <h5>Description: {{model.note}}</h5>
 
+
 {{update-question question=model update="update"}}
 
 {{question-detail question=model destroyQuestion="destroyQuestion"}}
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
