@@ -1,11 +1,14 @@
 <h1>Welcome to Q&A for Developers!</h1>
 
-<p>Here in this forum, developers from various levels come together to solve tricky problems and offered better solution</p>
+<p>Here in this forum, developers from various levels come together to solve tricky problems</p>
+<p>OR</p>
+<p>Have any general questions about programming!</p>
 
 <ul>
   {{#each model as |question|}}
-    <li>{{question.content by question.author}}</li>
+    {{question-tile question=question}}
   {{/each}}
+
 </ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}

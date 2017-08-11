@@ -2,12 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('question', params.rental_id);
+    return this.store.findRecord('question', params.question_id);
   },
-
   actions: {
     update(question, params) {
-      Object.key(params).forEach(function(key){
+      Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
           question.set(key,params[key]);
         }
@@ -15,9 +14,8 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
-
-    destoryQuestion(question) {
-      question.destoryQuestion();
+    destroyQuestion(question) {
+      question.destroyRecord();
       this.transitionTo('index');
     }
   }
