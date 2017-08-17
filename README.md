@@ -3,6 +3,35 @@
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
+## Planning
+
+1. Configuration/dependencies
+  * Ember
+    *jQuery
+    *Bootstrap
+  * Firebase
+  * Node.js
+  
+
+2. Specs
+  * User create a Question post which display on the homepage or user can click on the post which takes the user to post-       detailed page. User click 'new question', type in a question about programming, and post will display on the home page. 
+  * Another user can answer the question by clicking on the post. User click 'answer post' and type in a response to that       question. Their response will be display under the question post. 
+
+3. Integration
+  * Routes for index and post/:post_id
+  * Template for index.html (homepage) that displays all question post
+  * Template for post/:post_id (post detailed page) that displays answer response to the question post
+  
+
+4. UX/UI
+  * Include and modify bootstrap/materialize/Sass etc.
+  * Develop custom style
+
+5. Polish
+  * Heading for all routes-pages
+  * Navbar for all pages
+  * Make README awesome
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
